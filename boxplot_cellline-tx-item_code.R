@@ -54,9 +54,9 @@ str(plotdf)
 Title <- data_col_names[1]
 pdf(file= paste0(Title,".pdf"))
 ggplot(plotdf, aes(x=Treatment, y=Lipid.Droplets, fill=Cell.line)) + 
-  geom_boxplot() + ggtitle(Title)
+  geom_boxplot() + ggtitle(Title) + theme_grey(base_size = 22)
 ggplot(plotdf, aes(x=Cell.line, y=Lipid.Droplets, fill=Treatment)) + 
-  geom_boxplot()+ ggtitle(Title)
+  geom_boxplot()+ ggtitle(Title) + theme_grey(base_size = 22)
 dev.off()
 
 plotdf <- mydf[, c(fixed_colnames,data_col_names[2])]
@@ -66,9 +66,9 @@ str(plotdf)
 Title <- data_col_names[2]
 pdf(file= paste0(Title,".pdf"))
 ggplot(plotdf, aes(x=Treatment, y=Autophagosomes, fill=Cell.line)) + 
-  geom_boxplot() + ggtitle(Title)
+  geom_boxplot() + ggtitle(Title) + theme_grey(base_size = 22)
 ggplot(plotdf, aes(x=Cell.line, y=Autophagosomes, fill=Treatment)) + 
-  geom_boxplot()+ ggtitle(Title)
+  geom_boxplot()+ ggtitle(Title) + theme_grey(base_size = 22)
 dev.off()
 
 plotdf <- mydf[, c(fixed_colnames,data_col_names[3])]
@@ -78,9 +78,9 @@ str(plotdf)
 Title <- data_col_names[3]
 pdf(file= paste0(Title,".pdf"))
 ggplot(plotdf, aes(x=Treatment, y=Lamellar.bodies, fill=Cell.line)) + 
-  geom_boxplot() + ggtitle(Title)
+  geom_boxplot() + ggtitle(Title) + theme_grey(base_size = 22)
 ggplot(plotdf, aes(x=Cell.line, y=Lamellar.bodies, fill=Treatment)) + 
-  geom_boxplot()+ ggtitle(Title)
+  geom_boxplot()+ ggtitle(Title) + theme_grey(base_size = 22)
 dev.off()
 
 
